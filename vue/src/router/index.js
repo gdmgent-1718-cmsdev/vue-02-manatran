@@ -4,6 +4,8 @@ import Courses from '@/components/Courses'
 import Students from '@/components/Students'
 import Instructors from '@/components/Instructors'
 import CreateStudent from '@/components/CreateStudent'
+import CreateCourse from '@/components/CreateCourse'
+import CreateInstructor from '@/components/CreateInstructor'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/createstudent',
       name: 'Create Student',
       component: CreateStudent
+    },
+    {
+      path: '/createcourse',
+      name: 'Create Course',
+      component: CreateCourse
+    },
+    {
+      path: '/createinstructor',
+      name: 'Create Instructor',
+      component: CreateInstructor
     }
   ]
 })

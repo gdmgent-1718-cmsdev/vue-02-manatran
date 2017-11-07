@@ -22,7 +22,6 @@ export default {
     axios
     .get('http://cmsdev.localhost/university/instructors?_format=hal_json')
     .then(response => {
-      console.log(response.data[0])
       this.instructors = response.data
     })
     .catch(({ message: error }) => {
