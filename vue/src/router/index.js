@@ -1,15 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ReadArticle from '@/components/AllEntities'
+import Courses from '@/components/Courses'
+import Students from '@/components/Students'
+import Instructors from '@/components/Instructors'
+import CreateStudent from '@/components/CreateStudent'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'AllEntities',
-      component: AllEntities
+      path: '/courses',
+      name: 'Courses',
+      component: Courses
+    },
+    {
+      path: '/students',
+      name: 'Students',
+      component: Students
+    },
+    {
+      path: '/instructors',
+      name: 'Instructors',
+      component: Instructors
+    },
+    {
+      path: '/createstudent',
+      name: 'Create Student',
+      component: CreateStudent
     }
   ]
 })

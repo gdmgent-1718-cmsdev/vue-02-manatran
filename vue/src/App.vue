@@ -6,6 +6,7 @@
     </header>
     <main>
       <router-view></router-view>
+      <a href="/#/courses">Courses</a> - <a href="/#/students">Students</a> - <a href="/#/instructors">Instructors</a>
     </main>
   </div>
 </template>
